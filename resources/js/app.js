@@ -6,6 +6,8 @@
 
 // require('./bootstrap');
 import VueRouter  from 'vue-router';
+import axios  from 'axios';
+import VueAxios from 'vue-axios'
 import routes from './routes.js'
 import 'material-design-icons-iconfont/dist/material-design-icons.css' // Ensure you are using css-loader
 import Vue from 'vue'
@@ -15,6 +17,7 @@ import Home from './components/Home.vue'
 import App from './views/App.vue'
 
 Vue.use(VueRouter);
+Vue.use(VueAxios, axios);
 
 Vue.use(Vuetify, {
   iconfont: 'md'
@@ -34,7 +37,8 @@ const router = new VueRouter({routes});
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
 
 // Vue.component('template-component', require('./views/App.vue').default);
-// Vue.component('example-component', require('./components/ExampleComponent.vue'));
+// Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+// Vue.component('login', require('./views/Login.vue'));
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

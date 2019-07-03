@@ -105,6 +105,7 @@
         ></v-slider>
       </v-flex>
     </v-layout>
+    <a v-bind:href="link">Google</a>
   </div>
 </template>
 <script>
@@ -121,6 +122,7 @@ export default {
   name: 'home',
   data () {
     return {
+      link: 'http://google.com',
       title: 'Welcome to Your Vuetify, Vue.js App',
       width: 2,
       radius: 10,

@@ -198,8 +198,8 @@
         items: [
           { icon: 'home', text: 'Home', link:'/' },
           { icon: 'event', text: 'Calendar', link:'/calendar' },
-          { icon: 'history', text: 'Frequently contacted' },
-          { icon: 'content_copy', text: 'Duplicates' },
+          { icon: 'history', text: 'Event', link: 'event' },
+          { icon: 'bug_report', text: 'Game', link: 'game' },
           {
             icon: 'keyboard_arrow_up',
             'icon-alt': 'keyboard_arrow_down',
@@ -207,6 +207,15 @@
             model: true,
             children: [
               { icon: 'add', text: 'Axios', link:'/axios' }
+            ]
+          },
+          {
+            icon: 'keyboard_arrow_up',
+            'icon-alt': 'keyboard_arrow_down',
+            text: 'User',
+            model: false,
+            children: [
+              { icon: 'book', text: 'Detail', link:'/user-detail' }
             ]
           },
           {

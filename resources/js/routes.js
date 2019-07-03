@@ -6,16 +6,24 @@ import CalendarComponent from './components/CalendarComponent.vue'
 import AxiosComponent from './components/AxiosComponent.vue'
 import Register from './components/auth/Register.vue';
 import Login from './components/auth/Login.vue';
+import EventComponent from './components/EventComponent.vue';
+import GameComponent from './components/GameComponent.vue';
+
+//User
+import User from './components/user/User.vue';
 
 const host = window.location.host.toUpperCase()
 console.log(host);
 const routes = [
-  { path: '/', name: 'layout', component: Layout,
+  { path: '/index', name: 'layout', component: Layout,
     children: [
-        { path: '/', name: 'home', component: Home },
+        { path: '/home', name: 'home', component: Home },
         { path: '/example', name: 'example', component: ExampleComponent },
         { path: '/calendar', component: CalendarComponent },
         { path: '/axios', component: AxiosComponent },
+        { path: '/event', component: EventComponent },
+        { path: '/game', component: GameComponent },
+        { path: '/user', component: User },
     ]
   },
   { path: '/auth', name: 'auth', component: AuthLayout,

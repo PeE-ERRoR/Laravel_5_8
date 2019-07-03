@@ -22,7 +22,6 @@ Vue.use(VueAxios, axios);
 Vue.use(Vuetify, {
   iconfont: 'md'
 })
-
 const router = new VueRouter({routes});
 
 /**
@@ -45,6 +44,14 @@ const router = new VueRouter({routes});
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
+
+ export const eventBus = new Vue({
+   methods: {
+     changAge(age) {
+       this.$emit('ageWasEditd', age);
+     }
+   }
+ });
 
 const app = new Vue({
     render: h => h(App),

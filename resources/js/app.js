@@ -13,7 +13,7 @@ import 'material-design-icons-iconfont/dist/material-design-icons.css' // Ensure
 import Vue from 'vue'
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
-import Home from './components/Home.vue'
+// import Home from './components/Home.vue'
 import App from './views/App.vue'
 
 Vue.use(VueRouter);

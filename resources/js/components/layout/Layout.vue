@@ -231,6 +231,11 @@
               { text: 'Other contacts' }
             ]
           },
+          { icon: 'settings', text: 'Advanced Components', link: 'advanced-components' },
+          { icon: 'keyboard', text: 'Section 10', link: 'section-10' },
+          { icon: 'keyboard', text: 'Section 11', link: 'section-11' },
+          { icon: 'keyboard', text: 'Section 12', link: 'section-12' },
+          { icon: 'keyboard', text: 'Section 14', link: 'section-14' },
           { icon: 'settings', text: 'Settings' },
           { icon: 'chat_bubble', text: 'Send feedback' },
           { icon: 'help', text: 'Help' },
